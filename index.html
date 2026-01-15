@@ -1,43 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title> yug vaishnav </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #1c1f26;
+  color: #c4cfde;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #c4cfde;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.buy-btn {
+  margin-left: 20px;
+  padding: 10px 18px;
+  background-color: #ff014f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #878e99;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  color: #ffffff;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.hero-text h1 span {
+  color: #ff014f;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #878e99;
+}
+
+/* ================= SOCIAL ================= */
+.social {
+  margin-top: 40px;
+}
+
+.social span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons div {
+  width: 48px;
+  height: 48px;
+  background-color: #212428;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.social-icons div:hover {
+  background-color: #ff014f;
+  color: #ffffff;
+}
+
+/* ================= IMAGE ================= */
+.hero-image img {
+  width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+</style>
 </head>
+
 <body>
-  <h1>Heyyy!</h1>
 
-<h2>About Me</h2>
+<header>
+  <div class="logo">INBIO</div>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">FEATURES</a>
+    <a href="#">PORTFOLIO</a>
+    <a href="#">RESUME</a>
+    <a href="#">CLIENTS</a>
+    <a href="#">PRICING</a>
+    <a href="#">BLOG</a>
+    <a href="#">CONTACT</a>
+    <button class="buy-btn">BUY NOW</button>
+  </nav>
+</header>
 
+<section class="hero">
+  <div class="hero-text">
+    <div class="subtitle">WELCOME TO MY WORLD</div>
 
-<p>
-Hello! My name is <strong>Yug Vaishnav</strong>. I am a 
-<strong>B.Tech CSE (AI & ML) student</strong> at <strong>Rungta College</strong>.
-I enjoy recording moments and things around me, as I like observing and
-capturing everyday life.
-</p>
+    <h1>
+      Hi, I’m <span>Jone Lee</span><br>
+      a Developer.
+    </h1>
 
-<p>
-I completed my schooling from <strong>St. Vincent School, Bilaspur, Chhattisgarh</strong>.
-I was born on <strong>22 January 2007</strong> and I am <strong>19 years old</strong>.
-</p>
+    <p>
+      I use animation as a third dimension by which to simplify experiences
+      and guide through each and every interaction. I’m not adding motion
+      just to spruce things up, but doing it in ways that.
+    </p>
 
-<p>
-My father’s name is <strong>Rajkesher Vaishnav</strong> and my mother’s name is
-<strong>Shruti Vaishnav</strong>. I have a younger brother named
-<strong>Rudra Vaishnav</strong>.
-</p>
+    <div class="social">
+      <span>FIND WITH ME</span>
+      <div class="social-icons">
+        <div>FB</div>
+        <div>IG</div>
+        <div>IN</div>
+      </div>
+    </div>
+  </div>
 
-<p>
-<strong>Relationship status:</strong> Single
-</p>
+  <div class="hero-image">
+    <!-- Replace profile.png with your image -->
+    <img src="profile.png" alt="Profile Image">
+  </div>
+</section>
 
-<a href="https://www.instagram.com/hehe.yuuggg">
-    <img src="./myphoto.jpg" alt="Yug Vaishnav" width="200">
-</a>
-
-  <p>THANK YOU</p>
 </body>
 </html>
+
+
 
 
 
